@@ -1,5 +1,7 @@
 FROM alpine:latest
-MAINTAINER Marcelo Bartsch <marcelo@bartsch.cl>
+
+LABEL maintainer "Tim Malone <tim.malone@chromatix.com.au>"
 
 RUN apk --no-cache add lftp
+
 ENTRYPOINT [ "/usr/bin/lftp" ]
